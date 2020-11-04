@@ -12,9 +12,9 @@ GIT_DIRTY_COLOR=$FG[196]
 GIT_CLEAN_COLOR=$FG[084]
 GIT_PROMPT_INFO=$FG[243]
 
-PROPMT_END_SYMBOL=❯
+PROMPT_END_SYMBOL=❯
 
-PROMPT=$'%{$PROMPT_SUCCESS_COLOR%}%~%{$reset_color%}%{$GIT_PROMPT_INFO%}$(git_prompt_info)$(virtualenv_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status) %{$reset_color%}%{$PROMPT_PROMPT%}$PROPMT_END_SYMBOL%{$reset_color%} '
+PROMPT=$'%{$PROMPT_SUCCESS_COLOR%}%~%{$reset_color%}%{$GIT_PROMPT_INFO%}$(git_prompt_info)$(virtualenv_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status) %{$reset_color%}%{$PROMPT_PROMPT%}$PROMPT_END_SYMBOL%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" "
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$GIT_PROMPT_INFO%}"
