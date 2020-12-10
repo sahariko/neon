@@ -4,7 +4,7 @@ setopt promptsubst
 
 autoload -U add-zsh-hook
 
-PROMPT_SUCCESS_COLOR=$FG[117] # The path color
+PROMPT_SUCCESS_COLOR="$FG[117]$FX[bold]" # The path color
 PROMPT_FAILURE_COLOR=$FG[124]
 PROMPT_VCS_INFO_COLOR=$FG[242]
 PROMPT_PROMPT=$FG[205] # The end symbol's color
@@ -21,12 +21,12 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$GIT_PROMPT_INFO%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" "
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$GIT_CLEAN_COLOR%}✔"
 
-ZSH_THEME_GIT_PROMPT_ADDED="%{$FG[082]%}✚%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$FG[082]%}+%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$FG[166]%}✹%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[160]%}-%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$FG[220]%}➜%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[082]%}═%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[226]%}✭%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[226]%}*%{$reset_color%}"
 
 ZSH_THEME_VIRTUALENV_PREFIX=" ["
 ZSH_THEME_VIRTUALENV_SUFFIX="]"
